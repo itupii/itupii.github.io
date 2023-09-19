@@ -352,7 +352,7 @@ section#about {
   .nav-list {
     flex-direction: inline; /* Empilhe os itens verticalmente */
     gap: 10px;
-    padding-right: 70px;
+    padding-right: 85px;
   }
 
   .nav-list a {
@@ -362,16 +362,10 @@ section#about {
     width: 250px;
     align-items: center;
     padding: auto;
-    padding-right: 50px;
+    padding-right: 40px;
     
   }
   
-
-
-  
-
-  
-
   
   section#home {
     height: auto; /* Altura automática para acomodar conteúdo */
@@ -395,27 +389,42 @@ section#about {
     display: none; /* Oculte a imagem ou ajuste conforme necessário */
   }
 
-  #projects {
-    height: auto; /* Altura automática para acomodar o conteúdo */
-    flex-direction: column; /* Empilhe os elementos verticalmente */
-    align-items: center; /* Centralize o conteúdo verticalmente */
-    padding: 20px; /* Adicione espaço de preenchimento nas laterais */
-  }
-
-  .project-img {
-    width: 100%; /* Largura total para a imagem */
+  #text {
+    width: 60%;
+    text-align: center;
+    padding-top: 70px;
   }
 
   .project-img img {
-    width: 100%; /* Largura total para a imagem */
-    height: auto; /* Altura automática */
-    max-height: 500px; /* Aumente o valor para tornar as imagens maiores (ajuste conforme necessário) */
+    width: 280px;
+    bottom: 100px;
+    right: 50px;
+    align-items: center;
+    justify-content: center;
   }
 
   .project-info {
-    width: 100%; /* Largura total para a informação do projeto */
-    text-align: center; /* Centralize o texto */
-    margin-top: 20px; /* Adicione espaço superior para separar a imagem do texto */
-    font-size: 14px; /* Reduza o tamanho da fonte dos textos (ajuste conforme necessário) */
+    display: flex;
+    align-items: center; 
+    height: 50px;
+    right: 50px; 
+  }
+
+  .project-info p {
+  display: flex; /* Exibir os elementos na horizontal */
+  align-items: center;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .contact-info {
+    width: 100%;
+    display: flex;
+    
   }
 }
