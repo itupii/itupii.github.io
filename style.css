@@ -53,16 +53,17 @@ header {
 }
 
 .nav-list {
-  display: flex;
-  gap: 30px;
+  display: flex; /* Altere para exibir os itens horizontalmente em telas grandes */
+  gap: 10px;
+  color: #5445fc;
 }
 
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color:    #5445fc;
-  ;
+.nav-list a {
+  text-align: center;
+  color: #5445fc
 }
+
+
 
 /* HOME */
 
@@ -342,20 +343,36 @@ section#about {
   }
 
   header {
-    height: auto; /* Altura automática para acomodar conteúdo */
-    padding: 10px 20px; /* Espaçamento interno maior */
+    flex-direction: column; /* Empilhe os itens verticalmente */
+    padding: 20px;
+    height: auto; /* Altura automática para acomodar o conteúdo */
+
   }
 
   .nav-list {
-    display: block; /* Altere para empilhar os itens verticalmente */
-    gap: 10px; /* Reduza o espaçamento entre os itens */
+    flex-direction: inline; /* Empilhe os itens verticalmente */
+    gap: 10px;
+    padding-right: 70px;
   }
 
   .nav-list a {
-    display: block; /* Faça os links ocuparem toda a largura */
-    text-align: center; /* Centralize o texto */
+    font-size: 14px; /* Reduza o tamanho da fonte dos textos (ajuste conforme necessário) */
   }
+  img#logo {
+    width: 250px;
+    align-items: center;
+    padding: auto;
+    padding-right: 50px;
+    
+  }
+  
 
+
+  
+
+  
+
+  
   section#home {
     height: auto; /* Altura automática para acomodar conteúdo */
     flex-direction: column; /* Empilhe os elementos verticalmente */
