@@ -328,103 +328,72 @@ section#about {
   width: 100%;
 }
 
-/* Estilo geral para dispositivos móveis */
-@media screen and (max-width: 768px) {
-  body {
-    justify-content: flex-start; /* Altere a justificação para flex-start para evitar o centro */
-    align-items: center; /* Centralize verticalmente o conteúdo */
-    min-height: 100vh; /* Garanta que o body tenha pelo menos a altura da tela */
-    padding: 20px; /* Adicione preenchimento nas laterais para telas menores */
-  }
-
-  main {
-    max-width: 100%; /* Altere a largura máxima para ocupar toda a largura da tela */
-    padding: 20px; /* Adicione preenchimento nas laterais para telas menores */
-  }
-
+@media screen and (max-width: 1024px) {
   header {
-    flex-direction: column; /* Empilhe os itens verticalmente */
-    padding: 20px;
-    height: auto; /* Altura automática para acomodar o conteúdo */
-
+    padding: 10px 20px; /* Reduza o padding no cabeçalho */
   }
 
   .nav-list {
-    flex-direction: inline; /* Empilhe os itens verticalmente */
-    gap: 10px;
-    padding-right: 85px;
+    flex-direction: row; /* Volte à orientação horizontal */
+    justify-content: center;
   }
 
-  .nav-list a {
-    font-size: 14px; /* Reduza o tamanho da fonte dos textos (ajuste conforme necessário) */
-  }
-  img#logo {
-    width: 250px;
-    align-items: center;
-    padding: auto;
-    padding-right: 40px;
-    
-  }
-  
-  
   section#home {
-    height: auto; /* Altura automática para acomodar conteúdo */
-    flex-direction: column; /* Empilhe os elementos verticalmente */
-    align-items: center; /* Centralize o conteúdo verticalmente */
-    padding: 20px; /* Adicione espaço de preenchimento nas laterais */
-  }
-
-  .home-info {
-    width: 100%; /* Largura total */
-    text-align: center; /* Centralize o texto */
+    padding: 60px 20px; /* Reduza o padding na seção inicial */
   }
 
   .home-info button {
-    width: 100%; /* Largura total para botões */
-    margin-top: 20px; /* Espaço superior maior entre o texto e os botões */
+    width: 120px; /* Ajuste o tamanho do botão */
+  }
+}
+
+/* Consulta de mídia para telas pequenas (por exemplo, dispositivos móveis) */
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#home {
+    padding: 40px 20px; /* Reduza o padding na seção inicial para telas menores */
+  }
+
+  .home-info button {
+    width: 100%; /* Preencha a largura disponível */
   }
 
   .home-icon {
-    width: 100%; /* Largura total */
-    display: none; /* Oculte a imagem ou ajuste conforme necessário */
+    display: none; /* Oculte a seção de ícone em telas pequenas */
+  }
+  
+  #projects {
+    padding: 60px 20px; /* Reduza o padding na seção de projetos para telas menores */
   }
 
-  #text {
-    width: 60%;
-    text-align: center;
-    padding-top: 70px;
+  .swiper {
+    height: 300px; /* Reduza a altura do swiper em telas pequenas */
   }
 
-  .project-img img {
-    width: 280px;
-    bottom: 100px;
-    right: 50px;
-    align-items: center;
-    justify-content: center;
+  .swiper-slide {
+    padding: 0 10px; /* Ajuste o padding dos slides em telas pequenas */
   }
 
-  .project-info {
-    display: flex;
-    align-items: center; 
-    height: 50px;
-    right: 50px; 
+  section#contact, section#about {
+    padding: 60px 20px; /* Reduza o padding nas seções de contato e sobre mim para telas menores */
   }
 
-  .project-info p {
-  display: flex; /* Exibir os elementos na horizontal */
-  align-items: center;
+  .contact-info,
+  .bio,
+  .bio-info,
+  .headlines2 {
+    width: 100%; /* Preencha a largura disponível */
   }
 
-  .social-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  .contact-info {
-    width: 100%;
-    display: flex;
-    
+  .footer {
+    padding: 10px; /* Reduza o padding no rodapé para telas menores */
   }
 }
